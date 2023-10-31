@@ -1,5 +1,6 @@
 window.addEventListener("load",function () {
     var divExamen = document.getElementById("examen");
+    var divExamen = document.getElementById("echo");
     function comenzar() {
         fetch("plantillas/Plantilla.html")
             .then(x => x.text())
