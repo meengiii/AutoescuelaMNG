@@ -1,0 +1,33 @@
+[
+    {
+        "numero": 1,
+        "categoria": "Motor",
+        "pregunta": "¿Qué es el par motor?",
+        "respuestas": [
+            "El par motor es la fuerza de torsión que produce el motor y se transmite a las ruedas para propulsar el vehículo.",
+            "El par motor es la velocidad máxima que puede alcanzar un vehículo.",
+            "El par motor es la cantidad de gasolina que consume el motor."
+        ]
+    },
+    {
+        "numero": 2,
+        "categoria": "Circulación",
+        "pregunta": "¿Cómo se entra a una rotonda?",
+        "respuestas": [
+            "Se debe entrar en la rotonda sin detenerse ni ceder el paso.",
+            "Se debe ceder el paso a los vehículos que ya están en la rotonda y luego incorporarse cuando sea seguro.",
+            "Se debe tocar la bocina antes de entrar en la rotonda."
+        ]
+    },
+    {
+        "numero": 3,
+        "categoria": "Carga",
+        "pregunta": "¿Peso Máximo?",
+        "respuestas": [
+            "El peso máximo permitido es el que el conductor considere seguro.",
+            "El peso máximo permitido es el que está indicado en la señalización de la carretera.",
+            "El peso máximo permitido es el que establece la ley y está indicado en la ficha técnica del vehículo."
+        ]
+    }
+    
+]
