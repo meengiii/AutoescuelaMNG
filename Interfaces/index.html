@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../Estilos/login.css">
+    <script src="../JS/registro.js"></script>
 </head>
 <body>
     <div class="contenedor">
         <h2>Autoescuela MNG</h2>
-        <form action="../Helpers/index.php" method="POST">
+        <form action="index.html" method="POST">
             <div class="grupo-imput">
                 <label for="username">Usuario</label>
                 <input type="text" id="username" name="username" placeholder="Usuario">
@@ -20,8 +21,8 @@
             </div>
             <a class="olvido" href="olvidoContraseña.html">Olvidó su contraseña</a>
             <div class="botones">
-                <button class="registro" type="submit">Registrarse</button>
-                <button class="inicio" type="submit">Iniciar Sesión</button>
+                <button class="registro" id="registro" ><a href="registro.html" id="nuevoRegistro">No tienes cuenta? Registrarse</a></button>
+                <input type="submit" value="Iniciar Sesión" id="inicioSesion" >
             </div>
         </form>
     </div>

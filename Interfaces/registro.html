@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registro</title>
+    <link rel="stylesheet" href="../Estilos/registro.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Registro de Usuario</h2>
+        <form action="../Repositorio/procesar_registro.php" method="POST">
+            <div class="grupo-imput">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" placeholder="Usuario" required>
+            </div>
+            <div class="grupo-imput">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="botones">
+                <button type="submit" class="registro">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
