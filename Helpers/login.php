@@ -2,6 +2,11 @@
 
 class Login
 {
+    private $conexion;
+    function __construct($conexion)
+    {
+        $this->conexion = $conexion;
+    }
 
     public static function Identifica(string $username,string $password)
     {
