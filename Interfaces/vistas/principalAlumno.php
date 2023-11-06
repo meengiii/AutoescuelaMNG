@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>HOME</title>
-    <link rel="stylesheet" type="text/css" href="../Estilos/estilosPrinAlu.css">
+    <link rel="stylesheet" type="text/css" href="http://virtual.localmengi.com/autoescuelaMNG/interfaces/estilos/estilosPrinAlu.css">
 </head>
 <body>
     <div id="contenedor">
