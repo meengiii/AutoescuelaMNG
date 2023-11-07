@@ -1,28 +1,34 @@
 <?php
-
+require_once $_SERVER["DOCUMENT_ROOT"] . '/AutoescuelaMNG/Repositorio/repositorioUser.php';
 class Login
 {
     private $conexion;
+
     function __construct($conexion)
     {
         $this->conexion = $conexion;
     }
-
-    public static function Identifica(string $username,string $password)
+    //funcion que inicia sesion del usuario
+    public function user_login($nombre, $pass)
     {
+        $repositorio = new UserRepository($this->conexion);
+        $userData = $repositorio->encuentra($nombre);
 
+
+        if ($userData) 
+        {
+            Sesion::login_sesion($userData);
+            return true;
+        } else {
+            // Credenciales incorrectas
+            return false;
+        }
     }
 
-    public static function userExiste(string $username,string $password)
+    //funcion que cierra la sesion del usuario
+    public function user_logout()
     {
-        
-    }
 
-
-    public static function estaLogeado()
-    {
-        
     }
 }
-
 ?>

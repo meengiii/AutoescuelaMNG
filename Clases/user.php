@@ -1,65 +1,58 @@
 <?php
-
 class User
 {
+
     private $idUser;
     private $nombre;
-    private $pass;
+    private $password;
     private $rol;
 
-    public function __construct($idUser, $nombre, $pass, $rol)
+    //constructor
+    public function __construct($idUser, $nombre, $password,$rol)
     {
         $this->idUser = $idUser;
         $this->nombre = $nombre;
-        $this->pass = $pass;
+        $this->password = $password;
         $this->rol = $rol;
     }
 
-    public function getIdUser()
-    {
-        return $this->idUser;
-    }
 
-    public function setIdUser($idUser)
-    {
-        $this->idUser = $idUser;
-    }
-
+    //getter y setter
     public function getNombre()
     {
         return $this->nombre;
     }
-
     public function setNombre($nombre)
     {
         $this->nombre = $nombre;
     }
-
-    public function getPass()
+    public function getIdUser()
     {
-        return $this->pass;
+        return $this->idUser;
     }
-
-    public function setPass($pass)
+    public function setIdUser($idUser)
     {
-        $this->pass = $pass;
-    }
+        $this->idUser = $idUser;
 
+
+    }
+    public function getPassword()
+    {
+        return $this->password;
+    }
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
     public function getRol()
     {
         return $this->rol;
     }
-
     public function setRol($rol)
     {
         $this->rol = $rol;
     }
 
-    public function greet()
-    {
-        return "Hola, soy {$this->nombre} (ID: {$this->idUser}).";
-    }
+
 }
-
-
 ?>

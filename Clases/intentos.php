@@ -1,61 +1,61 @@
 <?php
-
-class Intentos
+class Intento
 {
-    private $idIntentos;
-    private $user_idUser;
-    private $examen_idExamen;
-    private $jsonRespuesta;
+    private $idIntento;
+    private $json;
+    private $idUser;
+    private $idExamen;
+    
+    //constructor
 
-    public function __construct($idIntentos, $user_idUser, $examen_idExamen, $jsonRespuesta)
-    {
-        $this->idIntentos = $idIntentos;
-        $this->user_idUser = $user_idUser;
-        $this->examen_idExamen = $examen_idExamen;
-        $this->jsonRespuesta = $jsonRespuesta;
+    public function __construct($idIntento, $json, $idUser, $idExamen){
+        $this->idIntento = $idIntento;
+        $this->json = $json;
+        $this->idUser = $idUser;
+        $this->idExamen = $idExamen;
     }
 
-    public function getIdIntentos()
+    //getter y setter
+
+    public function getIdIntento()
     {
-        return $this->idIntentos;
+        return $this->idIntento;
     }
 
-    public function setIdIntentos($idIntentos)
+    public function getJson()
     {
-        $this->idIntentos = $idIntentos;
+        return $this->json;
     }
 
-    public function getUserIdUser()
+
+    public function setJson($json)
     {
-        return $this->user_idUser;
+        $this->json = $json;
+
     }
 
-    public function setUserIdUser($user_idUser)
+    public function getIdUser()
     {
-        $this->user_idUser = $user_idUser;
+        return $this->idUser;
     }
 
-    public function getExamenIdExamen()
+
+    public function setIdUser($idUser)
     {
-        return $this->examen_idExamen;
+        $this->idUser = $idUser;
     }
 
-    public function setExamenIdExamen($examen_idExamen)
+
+    public function getIdExamen()
     {
-        $this->examen_idExamen = $examen_idExamen;
+        return $this->idExamen;
     }
 
-    public function getJsonRespuesta()
+    public function setIdExamen($idExamen)
     {
-        return $this->jsonRespuesta;
-    }
+        $this->idExamen = $idExamen;
 
-    public function setJsonRespuesta($jsonRespuesta)
-    {
-        $this->jsonRespuesta = $jsonRespuesta;
     }
 }
-
-
 
 ?>

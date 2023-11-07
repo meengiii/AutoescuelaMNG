@@ -14,8 +14,8 @@ body {
 .contenedor {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 45%;
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -56,42 +56,39 @@ h2 {
 .botones {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
 }
 
-.botones button {
-    padding: 10px 20px;
+.botones button, .botones input {
+    padding: 15px 30px; /* Aumenta el padding para hacer los botones más grandes */
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-}
-
-.botones input {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#nuevoRegistro{
-  color: white; 
-  text-decoration: none; 
+    text-align: center;
 }
 
 .registro {
-    width: 300px; 
-    margin: 90px 20px 90px 25px; 
+    margin: 5% 2% 7% 4%; /* Sube el botón hacia arriba (ajusta el valor superior) */
     background-color: #3498db;
     color: #fff;
-    text-align: center;
 }
 
 #inicioSesion {
-    width: 300px; 
-    margin: 90px 20px 90px 20px; 
+    margin: 2% 20px 5% 0; /* Sube el botón hacia arriba (ajusta el valor superior) */
     background-color: #3498db;
     color: #fff;
-    text-align: center;
 }
+
+#nuevoRegistro {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+
 
 
 

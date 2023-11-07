@@ -15,7 +15,7 @@ body {
     background-color: rgba(255, 255, 255);
     border-radius: 10px;
     width: 50%;
-    height: 40%;
+    height: 45%;
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -61,10 +61,13 @@ input{
     justify-content: center;
 }
 
-.botones button {
-    padding: 10px 20px;
+#regis  {
+    margin: 0;
+}
+.botones input {
+    padding: 15px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     margin: 10px 0; /* Añade margen para separar el botón del siguiente elemento */
 }
@@ -77,8 +80,6 @@ input{
 
 
 .registro {
-    width: 300px; 
-    margin: 90px 20px 90px 25px; 
     background-color: #3498db;
     color: #fff;
     text-align: center;

@@ -1,7 +1,7 @@
 <?php
 
-require_once  "../AutoescuelaMengibar/Uploads/session.php";
-require_once "../AutoescuelaMengibar/Clases/user.php";
+require_once  "../AutoescuelaMNG/Uploads/session.php";
+require_once "../AutoescuelaMNG/Clases/user.php";
 function login()
 {
     if (isset($_POST['siguiente'])) {
@@ -19,7 +19,7 @@ function login()
             $datos = explode(";", $v);
             if ($datos[0] == $nombre && $datos[1] == $contraseña) 
             {
-                $user = new Usuario ($datos[0],$datos[1],$datos[2]);
+                $user = new User ($datos[0],$datos[1],$datos[2]);
                 agrega($nombre, $ficherologin);
                 loginSesion($user);
                 header("Location: http://localhost/FormularioBIG/Formulario.php");

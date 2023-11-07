@@ -1,36 +1,83 @@
 <?php
-
 class Pregunta
 {
     private $idPregunta;
+    private $rep1;
+    private $rep2;
+    private $rep3;
+    private $correcta;
     private $enunciado;
-    private $res1;
-    private $res2;
-    private $res3;
-    private $resCorrecta;
-    private $dificultadPre;
-    private $categoriaPre;
+    private $url;
+    private $idDificultad;
+    private $idCategoria;
 
-    public function __construct($idPregunta, $enunciado, $res1, $res2, $res3, $resCorrecta, $url, $tipoURL)
-    {
+    //constructor
+    public function __construct($idPregunta, $rep1, $rep2, $rep3, $correcta, $enunciado, $url, $idDificultad, $idCategoria){
         $this->idPregunta = $idPregunta;
+        $this->rep1 = $rep1;
+        $this->rep2 = $rep2;
+        $this->rep3 = $rep3;
+        $this->correcta = $correcta;
         $this->enunciado = $enunciado;
-        $this->res1 = $res1;
-        $this->res2 = $res2;
-        $this->res3 = $res3;
-        $this->resCorrecta = $resCorrecta;
         $this->url = $url;
-        $this->tipoURL = $tipoURL;
     }
+
+    //getter y setter
 
     public function getIdPregunta()
     {
         return $this->idPregunta;
     }
 
-    public function setIdPregunta($idPregunta)
+
+    public function getRep1()
     {
-        $this->idPregunta = $idPregunta;
+        return $this->rep1;
+    }
+
+
+    public function setRep1($rep1)
+    {
+       return $this->rep1 = $rep1;   
+    }
+
+
+    public function getRep2()
+    {
+        return $this->rep2;
+    }
+
+
+    public function setRep2($rep2)
+    {
+        $this->rep2 = $rep2;
+
+    }
+
+
+    public function getRep3()
+    {
+        return $this->rep3;
+    }
+
+
+    public function setRep3($rep3)
+    {
+        $this->rep3 = $rep3;
+
+    }
+
+
+    public function getCorrecta()
+    {
+        return $this->correcta;
+    }
+
+
+    public function setCorrecta($correcta)
+    {
+        $this->correcta = $correcta;
+
     }
 
     public function getEnunciado()
@@ -41,69 +88,39 @@ class Pregunta
     public function setEnunciado($enunciado)
     {
         $this->enunciado = $enunciado;
+
     }
 
-    public function getRes1()
+    public function getUrl()
     {
-        return $this->res1;
+        return $this->url;
     }
 
-    public function setRes1($res1)
+    public function setUrl($url)
     {
-        $this->res1 = $res1;
+        $this->url = $url;
+
     }
 
-    public function getRes2()
+    public function getIdDificultad()
     {
-        return $this->res2;
+        return $this->idDificultad;
     }
 
-    public function setRes2($res2)
+    public function setIdDificultad($idDificultad)
     {
-        $this->res2 = $res2;
+        $this->idDificultad = $idDificultad;
+
     }
 
-    public function getRes3()
+    public function getIdCategoria()
     {
-        return $this->res3;
+        return $this->idCategoria;
     }
 
-    public function setRes3($res3)
+    public function setIdCategoria($idCategoria)
     {
-        $this->res3 = $res3;
-    }
-
-    public function getResCorrecta()
-    {
-        return $this->resCorrecta;
-    }
-
-    public function setResCorrecta($resCorrecta)
-    {
-        $this->resCorrecta = $resCorrecta;
-    }
-
-    public function getDificultadPre()
-    {
-        return $this->dificultadPre;
-    }
-
-    public function setDificultadPre($dificultadPre)
-    {
-        $this->dificultadPre = $dificultadPre;
-    }
-
-    public function getCategoriaPre()
-    {
-        return $this->categoriaPre;
-    }
-
-    public function setCategoriaPre($categoriaPre)
-    {
-        $this->categoriaPre = $categoriaPre;
+        return $this->idCategoria = $idCategoria;
     }
 }
-
-
-
 ?>
