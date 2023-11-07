@@ -1,50 +1,40 @@
 <?php
-
-class Examen
-{
+class Examen{
     private $idExamen;
-    private $fechaExamen;
-    private $user_idUser;
+    private $fechaHora;
+    private $idUser;
 
-    public function __construct($idExamen, $fechaExamen,$user_idUser)
-    {
-        $this->idExamen = $idExamen;
-        $this->fechaExamen = $fechaExamen;
-        $this->user_idUser = $user_idUser;
+    //constructor
+    public function __construct($idExamen,$fechaHora,$idUser){
+        $this->idExamen=$idExamen;
+        $this->fechaHora=$fechaHora;
+        $this->idUser=$idUser;
     }
+    //getter y setter
 
     public function getIdExamen()
     {
         return $this->idExamen;
     }
-
-    public function setIdExamen($idExamen)
+ 
+    public function getFechaHora()
     {
-        $this->idExamen = $idExamen;
+        return $this->fechaHora;
+    }
+ 
+    public function setFechaHora($fechaHora)
+    {
+        $this->fechaHora = $fechaHora;
     }
 
-    public function getFechaExamen()
+    public function getIdUser()
     {
-        return $this->fechaExamen;
+        return $this->idUser;
     }
 
-    public function setFechaExamen($fechaExamen)
+    public function setIdUser($idUser)
     {
-        $this->fechaExamen = $fechaExamen;
-    }
-    public function getUser_idUser()
-    {
-        return $this->user_idUser;
-    }
-
-
-    public function setUser_idUser($user_idUser)
-    {
-        $this->user_idUser = $user_idUser;
-
-        return $this;
+        $this->idUser = $idUser;
     }
 }
-
-
 ?>

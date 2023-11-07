@@ -1,36 +1,32 @@
 <?php
-
-class ExamenTienePregunta
+class Examen_has_pregunta
 {
-    private $examen_idExamen;
-    private $pregunta_idPregunta;
+    private $idExamen;
+    private $idPregunta;
 
-    public function __construct($examen_idExamen, $pregunta_idPregunta)
-    {
-        $this->examen_idExamen = $examen_idExamen;
-        $this->pregunta_idPregunta = $pregunta_idPregunta;
+    //constructor
+    public function __construct($idExamen, $idPregunta){
+        $this->idExamen = $idExamen;
+        $this->idPregunta = $idPregunta;
     }
 
-    public function getExamenIdExamen()
-    {
-        return $this->examen_idExamen;
-    }
+    //getter y setter
 
-    public function setExamenIdExamen($examen_idExamen)
+    public function getIdExamen()
     {
-        $this->examen_idExamen = $examen_idExamen;
+        return $this->idExamen;
     }
-
-    public function getPreguntaIdPregunta()
+    public function setIdExamen($idExamen)
     {
-        return $this->pregunta_idPregunta;
+        $this->idExamen = $idExamen;
     }
-
-    public function setPreguntaIdPregunta($pregunta_idPregunta)
+    public function getIdPregunta()
     {
-        $this->pregunta_idPregunta = $pregunta_idPregunta;
+        return $this->idPregunta;
+    }
+    public function setIdPregunta($idPregunta)
+    {
+        $this->idPregunta = $idPregunta;
     }
 }
-
-
 ?>

@@ -1,21 +1,18 @@
 <?php
 class DB
 {
-    private static $conexion = null;
 
-    public static function abreconexion()
+    private static $conexion = null;
+    public static function abreConexion()
     {
-        if (self::$conexion == null) 
-        {
-            try 
-            {
-                $conn = new PDO('mysql:host=localhost;dbname=autoescuelaBD', 'mengi', '1234');
-                return $conn; // Retorna la conexión
-            } catch (PDOException $e) 
-            {
-                echo "No se ha podido conectar: " . $e->getMessage();
-                return null;
+        if (self::$conexion === null) {
+            try {
+                $conexion = new PDO('mysql:host=localhost;dbname=autoescuelaBD', 'mengi', '1234');
+            } catch (PDOException $e) {
+                echo "Error de conexión: " . $e->getMessage();
             }
         }
+        return $conexion;
     }
 }
+?>
