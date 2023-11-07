@@ -52,19 +52,18 @@ class UserRepository
 
     }
 
-    public function encuentra($nombre, $pass)
+    public function encuentra($nombre)
     {
-        $query = "SELECT idUser, nombre, password,rol FROM USER WHERE nombre = :nombre and password=:pass";
+        $query = "SELECT idUser, nombre, password,rol FROM USER WHERE nombre = :nombre ";
         $stmt = $this->conexion->prepare($query);
         $stmt->bindParam(":nombre", $nombre, PDO::PARAM_STR);
-        $stmt->bindParam(":pass", $pass, PDO::PARAM_STR);
         $stmt->execute();
 
         $userData= $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($userData != null)
+        if ($userData)
         {
-            $user = new User($stmt["idUser"], $stmt["nombre"],$stmt["password"],$stmt["rol"]);
+            $user = new User($userData["idUser"], $userData["nombre"],$userData["password"],$userData["rol"]);
             return $user;
         }else{
             return null;

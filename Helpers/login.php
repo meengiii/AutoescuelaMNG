@@ -15,7 +15,7 @@ class Login
         $userData = $repositorio->encuentra($nombre);
 
 
-        if ($userData) 
+        if ($userData !=null) 
         {
             Sesion::login_sesion($userData);
             return true;
