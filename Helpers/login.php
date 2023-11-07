@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . '/AutoescuelaMNG/Repositorio/repositorioUser.php';
+require_once $_SERVER["DOCUMENT_ROOT"] . '/Repositorio/repositorioUser.php';
 class Login
 {
     private $conexion;
@@ -17,10 +17,9 @@ class Login
 
         if ($userData !=null) 
         {
-            Sesion::login_sesion($userData);
+            Session::login_sesion($userData);
             return true;
         } else {
-            // Credenciales incorrectas
             return false;
         }
     }

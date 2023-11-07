@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <?php
-    require_once $_SERVER["DOCUMENT_ROOT"] . "/AutoescuelaMNG/Interfaces/vistas/enruta.php";
-    
-    ?>
-</body>
-
-</html>
+<?php
+class Principal
+{
+    public static function main()
+    {
+        require_once $_SERVER["DOCUMENT_ROOT"] . "/Helpers/autocargador.php";
+        require_once $_SERVER["DOCUMENT_ROOT"] . "/Interfaces/vistas/enruta.php";
+    }
+}
+Principal::main();

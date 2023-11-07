@@ -1,5 +1,5 @@
 <?php
-class Sesion
+class Session
 {
     //inicia sesion
     public static function iniciar_sesion()

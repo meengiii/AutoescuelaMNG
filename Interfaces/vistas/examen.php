@@ -1,5 +1,6 @@
 <?php
-    
+    require_once $_SERVER["DOCUMENT_ROOT"] . "/Helpers/autocargador.php";
+    require_once $_SERVER["DOCUMENT_ROOT"] . "/Helpers/session.php";
 
     Session::iniciar_sesion();
     $user = Session::leer_sesion("usuario");
@@ -21,14 +22,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HOME</title>
-    <link rel="stylesheet" type="text/css" href="http://virtual.localfj.com/interfaces/estilos/estilosPrinAdmin.css">
+    <title>EXAMEN</title>
+    <link rel="stylesheet" type="text/css" href="http://virtual.localfj.com/interfaces/estilos/examen.css">
 </head>
 <body>
     <div id="contenedor">
         <div id="encabezado">
             <img id="imagenUsuario" src="http://virtual.localfj.com/interfaces/imagenes/logo.PNG" alt="Imagen Izquierda">
-            <h1 id="titulo">HOME</h1>
+            <h1 id="titulo">EXAMEN</h1>
             <img id="imagenDerecha" src="http://virtual.localfj.com/interfaces/imagenes/user2.webp" alt="Imagen Derecha" onclick="mostrarMenu()">
         </div>
         <div id="menuDesplegable">
@@ -44,6 +45,6 @@
             <a href="#">Modificar Profesor</a>
         </div>
     </div>
-    <script src="http://virtual.localfj.com/interfaces/js/despegable.js"></script>
+    <script src="http://virtual.localfj.com/interfaces/js/examen.js"></script>
 </body>
 </html>

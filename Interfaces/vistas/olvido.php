@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olvido su Contraseña</title>
-    <link rel="stylesheet" href="http://virtual.localmengi.com/AutoescuelaMNG/Interfaces/Estilos/olvido.css">
+    <link rel="stylesheet" href="http://virtual.localfj.com/Interfaces/Estilos/olvido.css">
 </head>
 <body>
     <div class="contenedor">

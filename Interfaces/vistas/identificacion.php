@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="http://virtual.localmengi.com/AutoescuelaMNG/Interfaces/Estilos/login.css">
+    <link rel="stylesheet" href="http://virtual.localfj.com/Interfaces/Estilos/login.css">
 </head>
 
 <body>
     <?php
-    require_once $_SERVER["DOCUMENT_ROOT"] . '/AutoescuelaMNG/helpers/autocargador.php';
-    require_once $_SERVER["DOCUMENT_ROOT"] . '/AutoescuelaMNG/helpers/session.php';
-    require_once $_SERVER["DOCUMENT_ROOT"] . '/AutoescuelaMNG/DateBase/db.php';
-    require_once $_SERVER["DOCUMENT_ROOT"] . '/AutoescuelaMNG/helpers/validacion.php';
+    
     
 
     //creamos validator
@@ -21,7 +18,7 @@
     //comprobamos que se ha hecho el post de formulario
     if (isset($_POST['login'])) {
         //creamos conexion y login
-        $conn = db::abreConexion();
+        $conn = DB::abreConexion();
         $login = new login($conn);
 
         //validamos
