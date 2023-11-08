@@ -23,13 +23,13 @@
 <html>
 <head>
     <title>EXAMEN</title>
-    <link rel="stylesheet" type="text/css" href="http://virtual.localfj.com/interfaces/estilos/examen.css">
+    <link rel="stylesheet" type="text/css" href="http://virtual.localfj.com/interfaces/estilos/generarExamen.css">
 </head>
 <body>
     <div id="contenedor">
         <div id="encabezado">
             <img id="imagenUsuario" src="http://virtual.localfj.com/interfaces/imagenes/logo.PNG" alt="Imagen Izquierda">
-            <h1 id="titulo">EXAMEN</h1>
+            <h1 id="titulo">CREAR TEST</h1>
             <img id="imagenDerecha" src="http://virtual.localfj.com/interfaces/imagenes/user2.webp" alt="Imagen Derecha" onclick="mostrarMenu()">
         </div>
         <div id="menuDesplegable">
@@ -45,7 +45,6 @@
             <a href="#">3 PREG</a>
         </div>
     </div>
-    <script src="http://virtual.localfj.com/interfaces/js/examen.js"></script>
     <script src="http://virtual.localfj.com/interfaces/js/despegable.js"></script>
 </body>
 </html>

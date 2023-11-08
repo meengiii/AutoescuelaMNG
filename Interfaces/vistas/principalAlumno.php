@@ -1,6 +1,5 @@
 <?php
     
-
     Session::iniciar_sesion();
     $user = Session::leer_sesion("usuario");
     $nombre = $user->getNombre();
@@ -30,9 +29,9 @@
             </ul>
         </div>
         <div id="enlaces">
-            <a href="#">Hacer Examen</a>
-            <a href="#">Generar Examen</a>
-            <a href="#">Ver Examen</a>
+            <a href="http://virtual.localfj.com/interfaces/vistas/examen.php">Hacer Examen</a>
+            <a href="http://virtual.localfj.com/interfaces/vistas/generalExamen.php">Generar Examen</a>
+            <a href="http://virtual.localfj.com/interfaces/vistas/examenesAlu.php">Ver Mis Examenes</a>
         </div>
     </div>
     <script src="http://virtual.localfj.com/interfaces/js/despegable.js"></script>
